@@ -1,0 +1,16 @@
+<form>
+  <div class="form-group">
+    <label>Opentado A</label>
+    <input type="number" name="operandoA" class="form-control" placeholder="Escribe operando A" [(ngModel)] = 'operandoA' />
+  </div>
+
+  <div class="form-group">
+    <label>Opentado B</label>
+    <input type="number" name="operandoB" class="form-control" placeholder="Escribe operando B" [(ngModel)] = 'operandoB' />
+  </div>
+
+  <div class="form-group mt-3">
+    <button type="button" class="btn btn-primary mx-2 " (click) = "sumar()">Sumar</button>
+    <button type="button" class="btn btn-warning " (click) = "reiniciar()">Reiniciar</button>
+  </div>
+</form>

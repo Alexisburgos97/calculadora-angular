@@ -7,18 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   titulo: string = 'Aplicación Calculadora';
-  operandoA: number = 0;
-  operandoB: number = 0;
-  resultado: number = 0;
+  resultadoPadre: number;
 
-  sumar():void{
-    this.resultado = this.operandoA + this.operandoB;
+  procesarResultado(resultado: number){
+      this.resultadoPadre = resultado;
   }
-  reiniciar():void{
-    this.operandoA = 0;
-    this.operandoB = 0;
-    this.resultado = 0;
-  }
-
 
 }
